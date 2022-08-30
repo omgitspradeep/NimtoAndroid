@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.myorders.MyordersFragment"
+    >
+
+    <ProgressBar
+        android:id="@+id/fragment_order_PB"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_marginTop="20dp"
+            >
+
+            <TextView
+                android:id="@+id/sn_myorder"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Sn"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+
+                />
+
+            <TextView
+                android:id="@+id/name_myorder"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                />
+
+            <TextView
+                android:id="@+id/viewas_myorder"
+                android:layout_width="0dp"
+                android:layout_weight="1.5"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="View\nas"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:gravity="center"
+                />
+
+
+
+            <TextView
+                android:id="@+id/analytics_myorder"
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textAppearance_mdpi_16_sp"
+                android:text="Analytics"
+                android:textStyle="bold"
+                android:textColor="@color/blue"
+                android:gravity="center"
+
+                />
+
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_myorders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/lay"
+            android:layout_marginTop="10dp"
+            android:padding="05dp"
+
+            />
+
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyOrderDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffe4e1"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/sn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:text="@string/s_n"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+
+        <TextView
+            android:id="@+id/inviteeNameTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="25"
+            android:text="@string/name"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+
+            />
+
+        <TextView
+            android:id="@+id/invitationStatusTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"
+            android:text="@string/status"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+
+            />
+        <TextView
+            android:id="@+id/inviteeUrlTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="45"
+            android:text="@string/url"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_weight="15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:text="@string/share"
+            android:textColor="@color/black"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <!-- Simple Swipe Refresh Layout -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ProgressBar
+            android:id="@+id/myorder_details_progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id = "@+id/swiperefreshlayout"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_myorders_invitees"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="50dp"
+            />
+
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/myorder_invitees_download_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/fab_margin"
+            android:layout_marginBottom="16dp"
+            app:srcCompat="@android:drawable/stat_sys_download" />
+
+    </FrameLayout>
+
+
+
+</LinearLayout>

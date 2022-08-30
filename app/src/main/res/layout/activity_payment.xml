@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".PaymentActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/factor_mdpi_30_dp"
+        >
+
+        <!--  label Order Name-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/payment_order_name_confirm_et_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            >
+            <EditText
+                android:id="@+id/payment_order_name_confirm_et"
+                android:hint="@string/order_name"
+                style="@style/MarriageContactETStyle"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--  label Invitation Language-->
+
+        <LinearLayout
+            android:id="@+id/payment_invitation_language_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/select_invitation_language"
+                android:textSize="@dimen/textAppearance_mdpi_20_sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+
+            <Spinner
+                android:id="@+id/payment_invitation_language_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@android:drawable/btn_dropdown"
+                android:entries="@array/country_array"
+                android:gravity="center_vertical"
+                android:layout_weight="9"
+                android:layout_marginLeft="@dimen/factor_mdpi_20_dp"
+                android:layout_marginRight="@dimen/factor_mdpi_20_dp"
+                android:hint="@string/select_invitation_language"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                />
+
+
+        </LinearLayout>
+
+        <!--  label Invitation Plans-->
+        <LinearLayout
+            android:id="@+id/payment_invitation_plan_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            >
+            <TextView
+                android:id="@+id/payment_invitation_plan_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginTop="4dp"
+                android:text="@string/select_invitation_plan"
+                android:textSize="@dimen/textAppearance_mdpi_20_sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="@dimen/factor_mdpi_20_dp"
+                android:layout_marginRight="@dimen/factor_mdpi_20_dp"
+                >
+
+                <Spinner
+                    android:id="@+id/payment_invitation_plan_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:gravity="center_vertical"
+                    android:layout_weight="9"
+                    android:hint="@string/select_invitation_plan"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/payment_invitation_plan_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@android:drawable/ic_menu_view"
+                    android:paddingStart="@dimen/factor_mdpi_25_dp"
+                    android:backgroundTint="@color/black"
+                    android:paddingEnd="@dimen/factor_mdpi_25_dp"
+                    />
+            </LinearLayout>
+
+
+
+
+
+            <!--  label Invitation Language-->
+
+            <LinearLayout
+                android:id="@+id/payment_method_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/select_payment_method"
+                    android:textSize="@dimen/textAppearance_mdpi_20_sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    />
+
+
+                <Spinner
+                    android:id="@+id/payment_method_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:entries="@array/country_array"
+                    android:gravity="center_vertical"
+                    android:layout_weight="9"
+                    android:layout_marginLeft="@dimen/factor_mdpi_20_dp"
+                    android:layout_marginRight="@dimen/factor_mdpi_20_dp"
+                    android:hint="@string/select_invitation_language"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <FrameLayout
+            android:layout_marginTop="@dimen/factor_mdpi_30_dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ProgressBar
+                android:id="@+id/order_payment_confirm_pb"
+                android:layout_width="@dimen/factor_mdpi_80_dp"
+                android:layout_height="@dimen/factor_mdpi_80_dp"
+                android:layout_gravity="end"
+                android:visibility="gone"
+                />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/payment_confirm_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:background="@drawable/button_border"
+                android:text="COnfirm BUY"
+                android:layout_gravity="center"
+                android:textSize="30sp"
+                android:padding="15dp"
+                />
+
+
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.marriagedata.MarriageMainDataFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/factor_mdpi_30_dp">
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/main_data_switch_compat_marriage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            android:checked="false"
+            android:text="@string/update"
+            android:textSize="@dimen/textAppearance_mdpi_18_sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <!-- Order Name label -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/main_data_order_name_et_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            >
+            <EditText
+                android:id="@+id/main_data_order_name_et"
+                android:hint="@string/order_name"
+                style="@style/MarriageContactETStyle"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- Title image (icon) label-->
+
+
+        <TextView
+            android:textSize="@dimen/textAppearance_mdpi_20_sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/upload_your_marriage_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            />
+
+        <ImageView
+            android:id="@+id/main_data_wedding_icon_iv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/factor_mdpi_150_dp"
+            android:background="@drawable/temp_d"
+            android:layout_marginTop="@dimen/factor_mdpi_05_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            />
+
+        <!-- ENDS Title image (icon) label-->
+
+
+
+        <!-- Bride Groom Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/main_data_b_g_name_et_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            >
+            <EditText
+                android:id="@+id/main_data_b_g_name_et"
+                android:hint="@string/name_of_bride_groom"
+                style="@style/MarriageContactETStyle"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- marry_date_text  Label-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/main_data_marry_date_et_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            >
+            <EditText
+                android:id="@+id/main_data_marry_date_et"
+                android:hint="@string/date_of_marriage"
+                style="@style/MarriageContactETStyle"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- engagement_date_text  Label-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/main_data_engagement_date_et_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            >
+            <EditText
+                android:id="@+id/main_data_engagement_date_et"
+                android:hint="@string/engagement_date_ex_friday_2077_08_26"
+                style="@style/MarriageContactETStyle"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- wedding_day_text  Label-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/main_data_wedding_day_et_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            >
+            <EditText
+                android:id="@+id/main_data_wedding_day_et"
+                android:hint="@string/wedding_day_ex_sunday_2077_09_05_20th_december_2020"
+                style="@style/MarriageContactETStyle"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- janti_prasthan_time  Label-->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/main_data_janti_prasthan_time_et_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            >
+            <EditText
+                android:id="@+id/main_data_janti_prasthan_time_et"
+                android:hint="@string/janti_prastan_time_ex_10_a_m"
+                style="@style/MarriageContactETStyle"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <!-- janti_prsthan_place  Label-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/main_data_janti_prasthan_place_et_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            >
+            <EditText
+                android:id="@+id/main_data_janti_prasthan_place_et"
+                android:hint="@string/wedding_location"
+                style="@style/MarriageContactETStyle"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <!-- reception_date  Label-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/main_data_reception_date_et_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            >
+            <EditText
+                android:id="@+id/main_data_reception_date_et"
+                android:hint="@string/reception_date_ex_tuesday_2077_09_07_22nd_december_2020"
+                style="@style/MarriageTestimonialETStyle"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- reception_time  Label-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/main_data_reception_time_et_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            >
+            <EditText
+                android:id="@+id/main_data_reception_time_et"
+                android:hint="@string/reception_time_ex_from_3_p_m_to_8_p_m"
+                style="@style/MarriageTestimonialETStyle"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- reception_place  Label-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/main_data_reception_place_et_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            >
+            <EditText
+                android:id="@+id/main_data_reception_place_et"
+                android:hint="@string/reception_venue_with_address"
+                style="@style/MarriageTestimonialETStyle"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- reception_place  Label-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/main_data_invitation_msz_et_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            >
+            <EditText
+                android:id="@+id/main_data_invitation_msz_et"
+                android:hint="@string/default_invitation_message"
+                style="@style/MarriageTestimonialETStyle"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- groom_info  Label-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/main_data_groom_info_et_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            >
+            <EditText
+                android:id="@+id/main_data_groom_info_et"
+                android:hint="@string/groom_introduction"
+                style="@style/MarriageTestimonialETStyle"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <!-- bride_info  Label-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/main_data_bride_info_et_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            >
+            <EditText
+                android:id="@+id/main_data_bride_info_et"
+                android:hint="@string/bride_introduction"
+                style="@style/MarriageTestimonialETStyle"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- groom_address  Label-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/main_data_groom_address_et_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            >
+            <EditText
+                android:id="@+id/main_data_groom_address_et"
+                android:hint="@string/groom_address"
+                style="@style/MarriageContactETStyle"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- bride_address  Label-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/main_data_bride_address_et_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            >
+            <EditText
+                android:id="@+id/main_data_bride_address_et"
+                android:hint="@string/bride_address"
+                style="@style/MarriageContactETStyle"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- footer_message  Label-->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/main_data_footer_message_et_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            >
+            <EditText
+                android:id="@+id/main_data_footer_message_et"
+                android:hint="@string/footer_quote"
+                style="@style/MarriageTestimonialETStyle"
+
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- About us Image label-->
+        <TextView
+            android:textSize="@dimen/textAppearance_mdpi_20_sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/upload_bride_groom_s_single_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            />
+
+        <ImageView
+            android:id="@+id/main_data_about_us_image_iv"
+            android:layout_width="@dimen/factor_mdpi_250_dp"
+            android:layout_height="@dimen/factor_mdpi_250_dp"
+            android:layout_gravity="center"
+            android:background="@drawable/temp_d"
+            android:layout_marginTop="@dimen/factor_mdpi_05_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            />
+        <!-- About us Image  label-->
+
+
+        <!-- header_image label-->
+        <TextView
+            android:textSize="@dimen/textAppearance_mdpi_20_sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:text="@string/upload_your_header_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            />
+
+        <ImageView
+            android:id="@+id/main_data_header_image_iv"
+            android:layout_width="@dimen/factor_mdpi_250_dp"
+            android:layout_height="@dimen/factor_mdpi_250_dp"
+            android:layout_gravity="center"
+            android:background="@drawable/temp_d"
+            android:layout_marginTop="@dimen/factor_mdpi_05_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            />
+        <!-- header_image  label-->
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:id="@+id/main_data_progressbar_marriage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end|center"
+                android:layout_marginEnd="@dimen/factor_mdpi_50_dp"
+                android:visibility="gone"
+                />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/marraige_main_data_update"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/factor_mdpi_40_dp"
+                android:layout_marginBottom="@dimen/factor_mdpi_24_dp"
+                android:background="@drawable/button_border"
+                android:padding="12dp"
+                android:text="@string/update_marriage_details"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/textAppearance_mdpi_24_sp"
+                android:layout_marginStart="@dimen/factor_mdpi_10_dp"
+                android:layout_marginEnd="@dimen/factor_mdpi_150_dp"
+                android:visibility="gone"
+                />
+
+        </FrameLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

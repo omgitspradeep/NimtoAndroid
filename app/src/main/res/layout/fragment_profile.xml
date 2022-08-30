@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.profile.ProfileFragment"
+    android:id="@+id/swiperefreshlayout_profile"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_layered_waves_haikei">
+
+
+        <RelativeLayout
+            android:id="@+id/shape_layout"
+            android:layout_width="106dp"
+            android:layout_height="106dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/rounded_profile_textview"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            >
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/myCardView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                app:cardCornerRadius="50dp">
+
+                <ImageView
+                    android:id="@+id/profile_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ksna"
+                    />
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/profile_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="08dp"
+            android:gravity="center"
+            android:paddingEnd="10dp"
+            android:text="Pradeep Khanal (omgitspradeep)"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shape_layout" />
+
+        <TextView
+            android:id="@+id/profile_email"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:gravity="start"
+            android:text="binary.science99@gmail.com"
+            android:drawablePadding="8dp"
+            android:textColor="@color/dark_blue"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_name"
+            app:drawableStartCompat="@drawable/ic_baseline_email_34" />
+
+
+        <TextView
+            android:id="@+id/profile_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:text="+977-9863949531"
+            android:drawablePadding="8dp"
+            android:textColor="@color/dark_blue"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_email"
+            app:drawableLeftCompat="@drawable/ic_baseline_phone_android_24" />
+
+        <TextView
+            android:id="@+id/profile_address"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:text="Butwal-18, Rupandehi"
+            android:drawablePadding="8dp"
+            android:textColor="@color/dark_blue"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_phone"
+            app:drawableLeftCompat="@drawable/ic_baseline_my_location_24" />
+
+
+        <TextView
+            android:id="@+id/profile_country"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:drawablePadding="8dp"
+            android:text="Nepal"
+            android:textColor="@color/dark_blue"
+            android:layout_marginStart="16dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_address"
+            app:drawableStartCompat="@drawable/ic_baseline_house_24" />
+
+
+
+        <TextView
+            android:id="@+id/profile_book_borrowed_currently"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:text="Hey Man, You are awesome. Never forget."
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="16dp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_country" />
+
+
+        <Button
+            android:id="@+id/profile_update_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Edit"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/profile_change_pass_btn"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_weight=".5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_book_borrowed_currently" />
+
+        <Button
+            android:id="@+id/profile_change_pass_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Change password"
+            android:textSize="16sp"
+            app:layout_constraintHorizontal_weight=".5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/profile_update_btn"
+            app:layout_constraintTop_toBottomOf="@+id/profile_book_borrowed_currently" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

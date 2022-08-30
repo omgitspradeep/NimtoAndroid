@@ -1,0 +1,155 @@
+<resources>
+    <string name="app_name">Nimto0</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_myorders">My Orders</string>
+    <string name="menu_aboutus">About us</string>
+    <string name="theme_image">Theme Image</string>
+    <string name="no_books">No Books</string>
+    <string name="noInternet">No Internet</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_activity_web_view">WebViewActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="s_n">S/n</string>
+    <string name="name">Guest</string>
+    <string name="status">Status</string>
+    <string name="url">Invitation Link</string>
+    <string name="share">Share</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_radio_selected">No answer has been selected.</string>
+    <string name="gender">Gender :</string>
+    <string name="guest_address">Guest Address</string>
+    <string name="personal_message">Personal Message</string>
+    <string name="wish_by_invitee">Wish by invitee</string>
+    <string name="donation">Donation</string>
+    <string name="invitation_type">Invitation type :</string>
+    <string name="wedding">Wedding</string>
+    <string name="reception">Reception</string>
+    <string name="add_guest">Add Guest</string>
+    <string name="guest_brings_us_more_love_and_happiness">Guest brings us more love and happiness.</string>
+
+    <!-- Marriage contact layout strings -->
+    <string name="youtube_link">Youtube Link</string>
+    <string name="facebook_link">Facebook Link</string>
+    <string name="twitter_link">Twitter Link</string>
+    <string name="e_mail">E-mail</string>
+    <string name="phone_number">Phone number</string>
+    <string name="linkedin_link">Linkedin Link</string>
+    <string name="update">UPDATE</string>
+    <string name="update_contact_info">Update Contact Info</string>
+
+    <!-- Marriage Parents layout strings -->
+    <string name="bride_s_father_fullname">Bride\'s Father (Fullname)</string>
+    <string name="bride_s_mother_fullname">Bride\'s mother (Fullname)</string>
+    <string name="groom_s_father_fullname">Groom\'s father (Fullname)</string>
+    <string name="groom_s_mother_fullname">Groom\'s mother (Fullname)</string>
+    <string name="update_parents_info">Update Parents Info</string>
+
+    <!-- Marriage Testimonials layout strings -->
+    <string name="gramdparent_s_name">Gramdparent\'s name</string>
+    <string name="parent_s_name">Parent\'s name</string>
+    <string name="brother_s_name">Brother\'s Name</string>
+    <string name="sister_s_name">Sister\'s name</string>
+    <string name="nephew_s_name">Nephew\'s name</string>
+    <string name="cousin_s_name">Cousin\'s name</string>
+    <string name="maternal_uncle_aunt">Maternal Uncle/Aunt</string>
+    <string name="update_testimonials_info">Update Testimonials Info</string>
+    <string name="direction_info">Direction Info</string>
+    <string name="palace_name">Palace Name</string>
+    <string name="address">Address</string>
+    <string name="email_or_facebook_link">Email or Facebook link</string>
+    <string name="contact_number">Contact number</string>
+    <string name="order_name">Order Name</string>
+    <string name="upload_your_marriage_logo">Upload your marriage logo</string>
+    <string name="name_of_bride_groom"><![CDATA[Name of Bride & Groom]]></string>
+    <string name="date_of_marriage">Date of Marriage</string>
+    <string name="engagement_date_ex_friday_2077_08_26">Engagement Date(Ex: Friday, 2077 – 08 - 26)</string>
+    <string name="wedding_day_ex_sunday_2077_09_05_20th_december_2020">Wedding Day(Ex: Sunday, 2077 - 09 - 05 (20th December 2020) )</string>
+    <string name="janti_prastan_time_ex_10_a_m">Janti Prastan Time(Ex: 10 a.m )</string>
+    <string name="wedding_location">Wedding Location</string>
+    <string name="reception_date_ex_tuesday_2077_09_07_22nd_december_2020">Reception Date(Ex: Tuesday, 2077 - 09 - 07 (22nd December 2020))</string>
+    <string name="reception_time_ex_from_3_p_m_to_8_p_m">Reception Time (EX: From 3 P.M. to 8 P.M.)</string>
+    <string name="reception_venue_with_address">Reception Venue (Ex: Lord Buddha Party Place, Siddharthanagar-1, Bhairahawa)</string>
+    <string name="default_invitation_message">Default Invitation Message</string>
+    <string name="bride_introduction">Bride Introduction</string>
+    <string name="groom_introduction">Groom Introduction</string>
+    <string name="groom_address">Groom Address</string>
+    <string name="bride_address">Bride Address</string>
+    <string name="footer_quote">Footer Quote</string>
+    <string name="upload_bride_groom_s_single_photo">Upload bride Groom\'s Single photo</string>
+    <string name="upload_your_header_image">Upload your header Image</string>
+    <string name="update_marriage_details">Update Marriage Details</string>
+    <string name="image_title">Image title</string>
+    <string name="image_in_detail">Image in Detail</string>
+    <string name="update_image">Update Image</string>
+    <string name="select_invitation_language">Select invitation Language</string>
+    <string name="select_invitation_plan">Select Invitation Plan</string>
+    <string name="select_payment_method">Select Payment Method</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+
+
+    <string-array name="country_array">
+        <item>Nepal</item>
+        <item>India</item>
+        <item>China</item>
+        <item>Japan</item>
+        <item>Norway</item>
+        <item>Iran</item>
+        <item>KSA</item>
+        <item>UAE</item>
+        <item>Qatar</item>
+        <item>Brazil</item>
+        <item>Vietnam</item>
+        <item>Taiwan</item>
+        <item>Russia</item>
+        <item>Germany</item>
+        <item>Thailand</item>
+    </string-array>
+
+    <string-array name="gender_array">
+        <item>Mr.</item>
+        <item>Ms.</item>
+    </string-array>
+
+    <string-array name="plans_array">
+        <item>I</item>
+        <item>B</item>
+        <item>G</item>
+        <item>Y</item>
+        <item>O</item>
+        <item>F</item>
+    </string-array>
+
+    <string-array name="order_language_array">
+        <item>en</item>
+        <item>ne</item>
+        <item>wari</item>
+        <item>hi</item>
+    </string-array>
+
+
+</resources>

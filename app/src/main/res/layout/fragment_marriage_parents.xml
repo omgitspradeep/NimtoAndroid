@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.marriagedata.MarriageParentsFragment">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/factor_mdpi_30_dp"
+            >
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/parents_switch_compat_marriage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+                android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+                android:checked="false"
+                android:text="@string/update"
+                android:textSize="@dimen/textAppearance_mdpi_18_sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/factor_mdpi_160_dp"
+                android:layout_height="@dimen/factor_mdpi_160_dp"
+                app:cardCornerRadius="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/factor_mdpi_40_dp"
+                >
+
+            <ImageView
+                android:id="@+id/parents_bride_f_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/temp_d"
+                />
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Bride Father label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/parents_bride_f_et_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+                android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+                android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+                >
+                <EditText
+                    android:id="@+id/parents_bride_f_et"
+                    android:hint="@string/bride_s_father_fullname"
+                    style="@style/MarriageContactETStyle"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/factor_mdpi_160_dp"
+                android:layout_height="@dimen/factor_mdpi_160_dp"
+                app:cardCornerRadius="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+                >
+
+                <ImageView
+                    android:id="@+id/parents_bride_m_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/temp_d"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- Phone number label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/parents_bride_m_et_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+                android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+                android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+                >
+                <EditText
+                    android:id="@+id/parents_bride_m_et"
+                    android:hint="@string/bride_s_mother_fullname"
+                    style="@style/MarriageContactETStyle"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/factor_mdpi_160_dp"
+                android:layout_height="@dimen/factor_mdpi_160_dp"
+                app:cardCornerRadius="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+                >
+
+                <ImageView
+                    android:id="@+id/parents_groom_f_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/temp_d"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Phone number label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/parents_groom_f_et_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+                android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+                android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+                >
+                <EditText
+                    android:id="@+id/parents_groom_f_et"
+                    android:hint="@string/groom_s_father_fullname"
+                    style="@style/MarriageContactETStyle"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/myCardView"
+                android:layout_width="@dimen/factor_mdpi_160_dp"
+                android:layout_height="@dimen/factor_mdpi_160_dp"
+                app:cardCornerRadius="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+                >
+
+                <ImageView
+                    android:id="@+id/parents_groom_m_iv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/temp_d"
+                    />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <!-- Phone number label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/parents_groom_m_et_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+                android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+                android:layout_marginEnd="@dimen/factor_mdpi_20_dp">
+
+                <EditText
+                    android:id="@+id/parents_groom_m_et"
+                    style="@style/MarriageContactETStyle"
+                    android:hint="@string/groom_s_mother_fullname" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/parents_progressbar_marriage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/marraige_parent_update"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/factor_mdpi_40_dp"
+                    android:layout_marginBottom="@dimen/factor_mdpi_24_dp"
+                    android:background="@drawable/button_border"
+                    android:padding="12dp"
+                    android:text="@string/update_parents_info"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textAppearance_mdpi_24_sp"
+                    android:layout_marginStart="@dimen/factor_mdpi_10_dp"
+                    android:layout_marginEnd="@dimen/factor_mdpi_10_dp"
+                    android:visibility="gone"
+                    />
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="6dp"
+    android:elevation="6dp"
+    app:cardBackgroundColor="@android:color/white"
+    android:layout_margin="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="2dp"
+        >
+
+        <TextView
+            android:layout_width="0dp"
+            android:id="@+id/sn_myorder_wisher"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1."
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/name_myorder_wisher"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="Pradeep Khanal"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/wishes_myorder_wisher"
+                android:textSize="15sp"
+                android:text="This is my congratulations message for newly wed beautiful couple. Have a great days ahead."
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/wishes_myorder_posted"
+                android:textSize="12sp"
+                android:text="2022-08-14T12:10:08.687Z"
+                android:textStyle="bold|italic"
+                android:textColor="@color/blue"
+                android:gravity="end"
+
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <ImageButton
+                android:id="@+id/viewas_myorder_wisher_delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/delete"
+                android:backgroundTint="@color/black"
+                />
+
+            <ImageButton
+                android:layout_marginStart="20dp"
+                android:id="@+id/viewas_myorder_wisher_edit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/edit"
+                android:backgroundTint="@color/black"
+                android:padding="10dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

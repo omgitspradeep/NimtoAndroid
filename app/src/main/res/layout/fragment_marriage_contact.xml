@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.marriagedata.MarriageContactFragment">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/factor_mdpi_30_dp"
+            >
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/contact_switch_compat_marriage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+                android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+                android:checked="false"
+                android:text="@string/update"
+                android:textSize="@dimen/textAppearance_mdpi_18_sp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                />
+
+            <!-- Phone number label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/marraige_phone_number_et_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+                android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+                android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+                >
+                <EditText
+                    android:id="@+id/marraige_phone_number_et"
+                    android:hint="@string/phone_number"
+                    style="@style/MarriageContactETStyle"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Phone Email label -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/marraige_email_et_"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+                android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+                android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+                android:layout_marginBottom="@dimen/factor_mdpi_08_dp"
+                >
+                <EditText
+                    android:id="@+id/marraige_email_et"
+                    android:hint="@string/e_mail"
+                    style="@style/MarriageContactETStyle"/>
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Phone Twitter label -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/marraige_twitter_et_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            android:layout_marginBottom="@dimen/factor_mdpi_08_dp"
+            >
+            <EditText
+                android:id="@+id/marraige_twitter_et"
+                android:hint="@string/twitter_link"
+                style="@style/MarriageContactETStyle"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Phone Facebook label -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/marraige_fb_et_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            android:layout_marginBottom="@dimen/factor_mdpi_08_dp"
+            >
+            <EditText
+                android:id="@+id/marraige_fb_et"
+                android:hint="@string/facebook_link"
+                style="@style/MarriageContactETStyle"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Phone Youtube label -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/marraige_yt_et_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            android:layout_marginBottom="@dimen/factor_mdpi_08_dp"
+            >
+            <EditText
+                android:id="@+id/marraige_yt_et"
+                android:hint="@string/youtube_link"
+                style="@style/MarriageContactETStyle"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Phone Linkedin label -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/marraige_linkedin_et_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/factor_mdpi_20_dp"
+            android:layout_marginStart="@dimen/factor_mdpi_20_dp"
+            android:layout_marginEnd="@dimen/factor_mdpi_20_dp"
+            android:layout_marginBottom="@dimen/factor_mdpi_08_dp"
+            >
+            <EditText
+                android:id="@+id/marraige_linkedin_et"
+                android:hint="@string/linkedin_link"
+                style="@style/MarriageContactETStyle"/>
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:id="@+id/contact_progressbar_marriage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center"
+                    android:layout_marginEnd="@dimen/factor_mdpi_50_dp"
+                    android:visibility="gone"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/marraige_contact_update"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/factor_mdpi_24_dp"
+                    android:layout_marginBottom="@dimen/factor_mdpi_24_dp"
+                    android:background="@drawable/button_border"
+                    android:padding="12dp"
+                    android:text="@string/update_contact_info"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/textAppearance_mdpi_24_sp"
+                    android:layout_marginStart="@dimen/factor_mdpi_10_dp"
+                    android:layout_marginEnd="@dimen/factor_mdpi_150_dp"
+                    android:visibility="gone"
+                    />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+</ScrollView>

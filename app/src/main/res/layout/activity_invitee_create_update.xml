@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    tools:context=".InviteeCreateUpdateActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        >
+
+        <ProgressBar
+            android:id="@+id/invitee_CU_pB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <EditText
+            android:id="@+id/invitee_cu_guest_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_baseline_person_24"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="Full Name"
+            android:text="Mr. Shyam Khanal"
+            android:inputType="textCapWords"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white_greyish"
+            android:textSize="@dimen/textAppearance_mdpi_18_sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/white_greyish" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/gender_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_vertical"
+                android:text="@string/gender"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textAppearance_mdpi_18_sp"
+                android:textStyle="bold"
+                />
+
+            <RadioGroup
+                android:id="@+id/radio_group_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_toRightOf="@+id/gender_tv"
+                android:layout_marginTop="5dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/radio_btn_gender_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mr. "
+                    android:checked="true"
+                    />
+
+                <RadioButton
+                    android:id="@+id/radio_btn_gender_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ms. "
+                    android:layout_marginStart="30dp"
+                    />
+
+            </RadioGroup>
+
+
+
+
+        </RelativeLayout>
+
+
+        <EditText
+            android:id="@+id/invitee_cu_guest_address"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:drawableStart="@android:drawable/ic_menu_mylocation"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="@string/guest_address"
+            android:text="Chicago, USA"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white_greyish"
+            android:layout_marginTop="5dp"
+            android:textSize="@dimen/textAppearance_mdpi_18_sp" />
+
+        <View
+            android:layout_height="1px"
+            android:layout_width="fill_parent"
+            android:background="@color/white_greyish" />
+
+        <EditText
+            android:id="@+id/invitee_cu_guest_message"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:drawableStart="@drawable/ic_baseline_email_34"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="@string/personal_message"
+            android:padding="10dp"
+            android:text="Welcome, Shyam you are welcome here."
+            android:textColor="@color/black"
+            android:textColorHint="@color/white_greyish"
+            android:layout_width="fill_parent"
+            android:textSize="@dimen/textAppearance_mdpi_18_sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/white_greyish" />
+
+        <TextView
+            android:id="@+id/invitee_cu_guest_wish"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:hint="@string/wish_by_invitee"
+            android:padding="10dp"
+            android:singleLine="false"
+            android:textColor="@color/black"
+            android:textColorHint="@color/white_greyish"
+            android:textSize="@dimen/textAppearance_mdpi_18_sp"
+            app:drawableLeftCompat="@drawable/love" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/white_greyish" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/invitee_cu_guest_donation_"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:text="@string/donation"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textAppearance_mdpi_18_sp"
+                android:textStyle="bold"
+               />
+
+            <TextView
+                android:id="@+id/invitee_cu_guest_donation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:drawablePadding="8dp"
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:text="2000"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textAppearance_mdpi_18_sp"
+                app:drawableLeftCompat="@drawable/rupee"
+                android:layout_toEndOf="@+id/invitee_cu_guest_donation_"
+                />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/white_greyish" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:text="@string/invitation_type"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textAppearance_mdpi_18_sp"
+            android:textStyle="bold"
+            />
+
+
+
+        <RadioGroup
+            android:id="@+id/radio_group_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <RadioButton
+                android:id="@+id/radio_btn_sts_wedding"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/wedding"
+                android:checked="true"
+                />
+
+            <RadioButton
+                android:id="@+id/radio_btn_sts_reception"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reception"
+                android:layout_marginStart="30dp"
+                />
+
+        </RadioGroup>
+
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/white_greyish" />
+
+
+
+        <Button
+            android:id="@+id/invitee_add_modify_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="3dp"
+            android:text="@string/add_guest"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textAppearance_mdpi_18_sp"
+            android:textStyle="bold"
+            />
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/guest_brings_us_more_love_and_happiness"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/textAppearance_mdpi_15_sp" />
+
+    </LinearLayout>
+    </FrameLayout>
+</ScrollView>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/order_more_menu_invitees"
+        android:title="Invitees"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/guests"
+        />
+
+    <item
+        android:id="@+id/order_more_menu_wishers"
+        android:title="Wishers"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/love"
+        />
+
+    <item
+        android:id="@+id/order_more_menu_edit"
+        android:title="Edit Info"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/edit"
+        />
+
+    <item
+        android:id="@+id/order_more_menu_delete"
+        android:title="Delete Order"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/delete"
+        />
+
+</menu>
