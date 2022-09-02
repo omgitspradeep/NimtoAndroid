@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    tools:context=".InviteeCreateUpdateActivity">
+    tools:context="com.pk.nimto.InviteeCreateUpdateActivity">
 
     <FrameLayout
         android:layout_width="match_parent"

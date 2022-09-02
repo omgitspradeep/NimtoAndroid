@@ -7,7 +7,7 @@
     android:background="@drawable/cut_card_background"
     android:id="@+id/main_layout"
     android:layout_height="match_parent"
-    tools:context=".ui.home.HomeFragment">
+    tools:context="com.pk.nimto.ui.home.HomeFragment">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swiperefreshlayout"

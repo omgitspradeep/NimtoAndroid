@@ -6,7 +6,7 @@ android {
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.nimto0"
+        applicationId "com.pk.nimto"
         minSdk 21
         targetSdk 32
         versionCode 1
@@ -19,6 +19,7 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
         }
 
     }
@@ -29,11 +30,13 @@ android {
     buildFeatures {
         viewBinding true
     }
+    namespace 'com.pk.nimto'
+
 }
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.4.2'
+    implementation 'androidx.appcompat:appcompat:1.5.0'
     implementation 'com.google.android.material:material:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.5.1'

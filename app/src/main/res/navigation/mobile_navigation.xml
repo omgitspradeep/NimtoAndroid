@@ -7,26 +7,26 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.nimto0.ui.home.HomeFragment"
+        android:name="com.pk.nimto.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
         android:id="@+id/nav_profile"
-        android:name="com.example.nimto0.ui.profile.ProfileFragment"
+        android:name="com.pk.nimto.ui.profile.ProfileFragment"
         android:label="@string/menu_profile"
         tools:layout="@layout/fragment_profile" />
 
     <fragment
         android:id="@+id/nav_myorders"
-        android:name="com.example.nimto0.ui.myorders.MyordersFragment"
+        android:name="com.pk.nimto.ui.myorders.MyordersFragment"
         android:label="@string/menu_myorders"
         tools:layout="@layout/fragment_myorders" />
 
 
     <fragment
         android:id="@+id/nav_aboutus"
-        android:name="com.example.nimto0.ui.aboutus.AboutFragment"
+        android:name="com.pk.nimto.ui.aboutus.AboutFragment"
         android:label="@string/menu_aboutus"
         tools:layout="@layout/fragment_aboutus" />
 

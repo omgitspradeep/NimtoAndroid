@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.nimto0">
+    package="com.pk.nimto">
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -17,52 +17,53 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Nimto0"
         tools:targetApi="31">
+
         <activity
-            android:name=".MyOrderedThemeBirthDayInformationActivity"
+            android:name="com.pk.nimto.MyOrderedThemeBirthDayInformationActivity"
             android:exported="false" />
         <activity
-            android:name=".ChangePasswordActivity"
+            android:name="com.pk.nimto.ChangePasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".UpdateProfile"
+            android:name="com.pk.nimto.UpdateProfile"
             android:exported="false" />
         <activity
-            android:name=".MyOrderedThemeMarriageInformationActivity"
+            android:name="com.pk.nimto.MyOrderedThemeMarriageInformationActivity"
             android:exported="false" />
         <activity
-            android:name=".InviteeCreateUpdateActivity"
+            android:name="com.pk.nimto.InviteeCreateUpdateActivity"
             android:exported="false"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".MyOrderDetailActivity"
+            android:name="com.pk.nimto.MyOrderDetailActivity"
             android:exported="false"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".MyOrderWishersActivity"
+            android:name="com.pk.nimto.MyOrderWishersActivity"
             android:exported="false"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".MyOrderInviteesActivity"
+            android:name="com.pk.nimto.MyOrderInviteesActivity"
             android:exported="false"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".PaymentConfirmedActivity"
+            android:name="com.pk.nimto.PaymentConfirmedActivity"
             android:exported="false"
             android:screenOrientation="landscape" />
         <activity
-            android:name=".PaymentActivity"
+            android:name="com.pk.nimto.PaymentActivity"
             android:exported="false" />
         <activity
-            android:name=".WebViewActivity"
+            android:name="com.pk.nimto.WebViewActivity"
             android:exported="false" />
         <activity
-            android:name=".ThemeDetailActivity"
+            android:name="com.pk.nimto.ThemeDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name="com.pk.nimto.LoginActivity"
             android:exported="false" />
         <activity
-            android:name=".StartActivity"
+            android:name="com.pk.nimto.StartActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -71,7 +72,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
+            android:name="com.pk.nimto.MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Nimto0.NoActionBar">
