@@ -61,7 +61,6 @@ public class LoginActivity extends AppCompatActivity implements MainInterface.Lo
         loginProgress = findViewById(R.id.login_progress);
 
         usernameET.setText("s@gmail.com");
-        passwordET.setText("1abc@def");
     }
 
     public boolean validate(String userName,String userPass) {
